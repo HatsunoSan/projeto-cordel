@@ -7,13 +7,12 @@ font-family: 'Sriracha', cursive;
 */
 
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
 
-a:hover {
-    text-decoration: underline;
-}
+
+
 
 :root {
     --fonte1: 'Passion One', 'cursive';
@@ -21,99 +20,91 @@ a:hover {
     --fonte3: 'Verdana', 'cursive';
 }
 
-body {
+
+
+
+html, body {
     background-color: darkgray;
+    min-height: 100vh;
 }
 
+
+
+
 header {
+    color: white;
     background-color: black;
     text-align: center;
     padding: 50px;
-    
 }
 header > h1 {
     font-family: var(--fonte1);
-    color: white;    
     
     /* Transforma as letras minúsculas em maiúsculas, deixa de tamanho menor do que uma naturalmente maiúscula */
     font-variant: small-caps; 
-    font-size: 6em;
+    font-size: 10vw;
 }
-
 header > p {
-    color: white;
     font-family: var(--fonte3);
 }
+
+
+
 
 a {
     text-decoration: none;
     color: white;
-    font-weight: bold;
+    font-weight: bolder;
 }
+a:hover {
+    text-decoration: underline;
+}
+
+
 
 
 section {
     padding: 50px;
-
-    
+    font-size: 4vw;
+   
 }
-
 section > p {
     font-family: var(--fonte2);
-    line-height: 60px;
+    line-height: 2em;
     
     padding: 20px;
     padding-top: 50px;
-    font-size: 2em;
-    width: 400px;
-    margin: 40px;
-
-    
+    margin: 30px;
+    margin-left: -30px;   
 }
 
 
 
-#bloco1 {
-    background-color: white;
+
+.normal {
+    background-color: white;   
 }
-#bloco1 > p {
-    text-align: justify;
-}
-#bloco2 {
-    background-image: url(imagens/background001.jpg);
-    background-attachment: fixed;
-    background-position: center right;
+.imagem {
+    box-shadow: inset 6px 6px 20px 13px rgb(0 0 0 / 54%);
     background-size: cover;
-    
-    
-    
-    
-    
+    background-attachment: fixed;
 }
-#bloco2 > p {
+.imagem > p{
     color: white;
     background-color: rgba(0, 0, 0, 0.418);
-    
-    
-    
-    
+    display: inline-block;
 }
-#bloco3 {
-    background-color: white;
-}
-#bloco4 {
-    background-image: url(imagens/background002.jpg);
-    background-attachment: fixed;
+#img01 {
+    background-image: url(imagens/background001.jpg);
     background-position: center center;
 }
-#bloco4 > p {
-    color: white;
-    background-color: rgba(0, 0, 0, 0.418);
+#img02 {
+    background-image: url(imagens/background002.jpg);
+    background-position: center right;
     
+    text-shadow: 1px 1px 1px black;
 }
-#bloco5 {
-    background-color: white;
-}
+
 
 
 
